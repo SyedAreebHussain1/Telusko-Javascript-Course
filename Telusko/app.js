@@ -1,5 +1,196 @@
 // console.log('Hello')
 
+
+
+
+
+// class one
+// command => (node app.js)  result('Hello World')
+// console.log('Hello World')
+
+// class two
+// install code runner extension
+
+
+// class three
+
+
+// console.log(2 + 2)
+// console.log(2 + 2 + 3)
+
+
+// num = 2 + 2
+// console.log(num + 3)
+
+// let num = 4
+// console.log(num + 3)
+// num = 9
+// console.log(num)
+
+// let username = "Areeb's Account"
+//     console.log(username)
+
+// // snake casing rule
+// let user_name = "Veriable declear snake casing rule"
+// console.log(user_name)
+// // Camel casing rule standard
+// let userName = "Veriable declear Camel casing rule"
+// console.log(userName)
+
+
+
+// class four
+// area of circle
+// let radius = 5
+// const pi = 3.14
+// let area
+
+// area = pi * radius * radius
+// console.log(area)
+
+// function areaOfCircle(r, p) {
+//     return p * r * r
+// }
+// console.log(areaOfCircle(radius, pi))
+
+
+// Percentage Calculate
+// const totalNum = 550
+// let studentNum = 424
+// function percentageCalculate(tNum, sNum) {
+//     return sNum / tNum * 100
+// }
+// console.log(percentageCalculate(totalNum, studentNum))
+
+
+
+// class five
+
+
+// let data = 8 //type Number
+// let user = "Areeb" //type String
+// let logic = true //type Boolean
+
+// There are two types data type
+// 1. Primitive
+// 2. Object
+
+// Primitive
+// 1. Number
+// 2. String
+// 3. Boolean
+// 4. Null
+// 5. Undefine
+// 6. Symbol
+
+// const x = Symbol('hey');
+// console.log(x.description); // hey
+
+
+// let num1 = 250
+// console.log(num1 * 5)
+
+
+// let data = 8 //typeof Number
+// let user = "Areeb" //typeof String
+// let num1 = 7.8 //typeof number
+// // let logic = true //typeof Boolean
+
+
+// Hexadecimal number
+// let hexadecimal = 0xff
+// console.log(hexadecimal)
+
+
+
+// exponential
+// let num = 1.5e12 //1.5*10square(12)
+// console.log(num)//1500000000000
+
+
+
+// let num = 100_00_00
+// console.log(typeof num , num)
+
+
+// let num = 5/0
+// console.log(num) //Infinity
+// let num = -5/0
+// console.log(num) //-Infinity
+
+// let num = -5 / 0
+// console.log(Number.MAX_VALUE * 10)
+
+
+// let num = 1012312345034234234234234234234234n
+// console.log(num)
+
+// let num = 1012312345034234234234234234234234n
+// // console.log(num + 2)//Cannot mix BigInt and other types
+// console.log(num + 2n)
+
+
+// class six
+
+// let firstName = "Areeb"
+// let lastName = "Hussain"
+// const user = firstName + " " + lastName
+// console.log(user)
+
+
+// const user = 'Areeb Hussain "Telusko"'
+// console.log(user)
+
+// const user = "Areeb Hussain \"Telusko\""
+// console.log(user)
+
+
+// start new line in String
+// const user = "Areeb \nHussain"
+// console.log(user)
+
+
+
+// const user = "Ar\teeb Hus\vsain"
+// console.log(user)
+
+
+
+// delete string alphabet //example back-space
+// const user = "Areeb Huss\bain"
+// console.log(user)
+
+
+//Boolean
+// let bool = 5 > 6 //false
+// console.log(typeof bool) //boolean
+
+
+// let foo = null
+// console.log(typeof foo)// typeof object
+
+
+// let foo
+// console.log(typeof foo) //undefined
+
+
+// let num = 5
+// console.log(num / "Areeb")//NaN
+
+
+
+// let num = 5
+// console.log(num / "Areeb")//NaN
+
+
+// let num = 5
+// console.log( typeof (num / "Areeb"))//number
+
+
+
+// class seven
+// History of JavaScript
+
 //Class 8 Type Conversion & Coerciion
 
 // let num = 6;
@@ -136,8 +327,46 @@
 
 
 
+// ASCII Value
 
-let x = "Book";
-let y = "Book";
-let res =   x < y;
-console.log(res)
+// let x = "BALL"; //
+// let y = "CEAU"; //
+// let res = x > y
+// console.log(res) //false
+
+
+
+// let x = "Pen"; //P = 80
+// let y = "Book"; //B = 66
+// let res = x > y
+// console.log(res)
+
+
+
+// let x = "Pen"; //
+// let y = "Pencil"; //
+// let res = x > y
+// console.log(res)
+
+
+
+// let x = "5"
+// let y = 3
+// console.log(x > y) //true 
+
+
+
+
+// let x = "3"
+// let y = 3
+// console.log(x == y) //true 
+// console.log(x === y) //false
+
+
+let x = ""
+let y = false
+console.log(x == y) //true 
+console.log(x === y) //false 
+
+
+// double == check data only not check type but thiple === check data and type both
