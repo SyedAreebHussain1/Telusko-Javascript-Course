@@ -221,11 +221,14 @@
 // }
 // console.log(foo(num1, num2));
 
+
+// 0 - false
+// 1 - true
 // let num1 = true;
 // let num2 = true;
 // function foo(num1, num2) {
-// //   console.log(num1, num2);
-//   return num1 +  num2;
+//     //   console.log(num1, num2);
+//     return num1 + num2;
 // }
 // console.log(foo(num1, num2));
 
@@ -234,16 +237,32 @@
 // console.log(num)
 
 // let num = 4
+// // short hand operator
 // num += 2
-// num++ //5 //post increment
-// ++num //5 //pre increment
-// num-- // 3
 // console.log(num)
 
+
+
 // let num = 4
-// num-- //3 //post increment
-// // --num //3 //pre decrement
-// console.log(num)
+// num++ // increment
+// console.log(num)//5 
+
+
+// let num = 4
+// num--  // decrement
+// console.log(num) //3
+
+
+// let num = 4
+// ++num //pre increment
+// num++ //post increment
+// console.log(num)//6
+
+
+// let num = 4
+// num-- //post decrement
+// --num  //pre decrement
+// console.log(num)//2
 
 // // post increment
 // let num = 4;
@@ -255,6 +274,19 @@
 // let x = ++num; //pre increment
 // console.log(x,  num); //5 5
 
+
+// // post decrement
+// let num = 4;
+// let x = --num; 
+// console.log(x,  num); //3 3
+
+// // pre decrement
+// let num = 4
+// let x = num--
+// console.log(x, num) //4 3
+
+
+// //find qube of num
 // let num = 4;
 // let result = num * num * num;
 // console.log(num, result); // 64
@@ -268,6 +300,11 @@
 // let num = 4;
 // let result = num ** 3;
 // console.log(num, result); // 64
+
+// //4 ka square
+// let num = 4;
+// let result = num ** 2;
+// console.log(result); // 16
 
 // class 10
 // Relation Operators
@@ -434,6 +471,63 @@
 // Sat - sun - 8am
 
 
+// if else statement
+// let day = "Monday"
+// if (day === "Saturday" || day === "Sunday") {
+//     console.log("8am")
+// } else if (day === "Tuesday" || day === "Wednesday" || day === "Thursday") {
+//     console.log("4am")
+// } else if (day === "Friday") {
+//     console.log("9am")
+// } else if(day === "Monday") {
+//     console.log("7am")
+// }else{
+// console.log("Holiday")
+// }
+
+//switch case
+// let day = "Friday"
+// switch (day) {
+//     case "Tuesday":
+//     case "Wednesday":
+//     case "Thursday":
+//         console.log("4am")
+//         break;
+//     case "Friday":
+//         console.log('9am')
+//         break;
+//     case "Saturday":
+//     case "Sunday":
+//         console.log("8am")
+//         break;
+//     default:
+//         console.log('7am')
+// }
+
+
+// switch statment
+// let day = new Date().getDay()
+// let alarmDay
+// switch (day) {
+//     case 1:
+//         alarmDay = "7am"
+//         break;
+//     case 0:
+//     case 5:
+//         alarmDay = '8am';
+//         break;
+//     case 6:
+//         alarmDay = '9am';
+//         break;
+//     case 2:
+//     case 3:
+//     case 4:
+//         alarmDay = '4am'
+//         break;
+//     default:
+//         alarmDay = "Holiday";
+// }
+// console.log(alarmDay)
 
 
 // week days get
@@ -454,3 +548,163 @@
 // };
 // let res = curr.toLocaleString("en-PK",options)
 // console.log(res)
+
+
+
+// class 15 Template Literal in JavaScript
+
+// let num1 = 9
+// let num2 = 4
+// let res = num1 + num2
+
+// console.log("The addition of " + num1 + " and " + num2 + " is " + res)
+// console.log(`The addition of ${num1} and ${num2} is ${res}`)
+
+
+// break line in template literal
+// console.log("My Name is \nAreeb") //\n
+// console.log(`My Name is
+// Areeb`)
+
+
+
+
+// #16 While loop in JavaScript
+
+//There are three types of loops
+//1.while loop
+//2.do while loop
+//3.for loop
+
+// console.log("Hi")
+// console.log("Hi")
+// console.log("Hi")
+// console.log("Hi")
+// console.log("Hi")
+
+
+
+// loop steps
+// 1.Initialization
+// 2.Condition
+// 3.Increment and Decrement
+
+
+// // while loop
+// check for the conditions
+// Execute the block
+
+
+// let i = 1 //Initialization value
+// while (i <= 5) //Condition
+//  {
+//     // This block is Increment and Decrement
+//     console.log(`${i} Hi`)
+//     i++ //post increment
+// }
+
+
+// let i = 5//Initialization value
+// while (i > 0) //Condition
+// {
+//     // This block is Increment and Decrement
+//     console.log(`Hi ${i}`)
+//     i-- //decrement
+// }
+
+
+
+
+// do while loop
+// Execute the block
+// check for the condiations
+// let i = 10//Initialization value
+// do
+// {
+//     // This block is Increment and Decrement
+//     console.log(`Hi ${i}`) // Hi 10 only one time initial value of i
+//     i++ //decrement
+// } while (i <= 5) //Condition
+
+
+// 17 For Loop in JavaScript
+
+// for (let i = 5; i >= 1; i--) {
+//     console.log(`${i} Hi`) //5 - 1
+// }
+
+
+// for (let i = 1; i <= 5; i++) {
+//     console.log(`${i} Hi`) //1 - 5
+// }
+
+// let i = 1
+// for (; i <= 5; ) {
+//     console.log(`${i} Hi`) //1 - 5
+//     i++
+// }
+
+
+
+// remove condition in for loop perametr and infinate loop
+// let i = 1
+// for (;; )  {
+//     console.log(`${i} Hi`) //infinite loop
+//     i++
+// }
+
+
+
+// nested loop
+// for (let i = 1; i <= 5; i++) {
+//     console.log(`${i} Hi`)
+//     for (let j = 1; j <= 5; j++)
+//         console.log(j, 'Hello')
+// }
+
+
+// #18 While vs For Loop | Which to use and When?
+// which loop is best for loop or while loop
+
+// for (let i = 1; i < 100; i++) {
+//     if(i%2==0){
+//         console.log(i,'even number')
+//     }else {
+
+//         console.log(i , 'Odd number')
+//     }
+// }
+
+// for (let i = 1; i < 100; i++) {
+//     if (i % 3 == 0) {
+//         console.log(i)
+//     }
+// }
+
+// This code is copy in youtube comments
+// for(let i = 3; i < 100; i += 3){
+//     console.log(i)
+// }
+
+
+// // agr ma num % 5 karunga tou result 1 ayga
+// let num = 123456 
+// console.log(num % 5) //1
+
+
+
+
+// let num = 123456 
+// console.log(num % 10) //6
+// num = parseInt(num / 10)
+// console.log(num)
+
+
+
+let num = 564344
+while (num > 0) {
+
+    console.log(num % 10)
+    num = parseInt(num / 10)
+    // console.log(num)
+}
