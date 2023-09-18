@@ -221,7 +221,6 @@
 // }
 // console.log(foo(num1, num2));
 
-
 // 0 - false
 // 1 - true
 // let num1 = true;
@@ -241,23 +240,18 @@
 // num += 2
 // console.log(num)
 
-
-
 // let num = 4
 // num++ // increment
-// console.log(num)//5 
-
+// console.log(num)//5
 
 // let num = 4
 // num--  // decrement
 // console.log(num) //3
 
-
 // let num = 4
 // ++num //pre increment
 // num++ //post increment
 // console.log(num)//6
-
 
 // let num = 4
 // num-- //post decrement
@@ -274,17 +268,15 @@
 // let x = ++num; //pre increment
 // console.log(x,  num); //5 5
 
-
 // // post decrement
 // let num = 4;
-// let x = --num; 
+// let x = --num;
 // console.log(x,  num); //3 3
 
 // // pre decrement
 // let num = 4
 // let x = num--
 // console.log(x, num) //4 3
-
 
 // //find qube of num
 // let num = 4;
@@ -470,7 +462,6 @@
 // Fri - 9am
 // Sat - sun - 8am
 
-
 // if else statement
 // let day = "Monday"
 // if (day === "Saturday" || day === "Sunday") {
@@ -504,7 +495,6 @@
 //         console.log('7am')
 // }
 
-
 // switch statment
 // let day = new Date().getDay()
 // let alarmDay
@@ -529,7 +519,6 @@
 // }
 // console.log(alarmDay)
 
-
 // week days get
 // const locale = "en-US"; // Change this based on client settings
 // const date = new Date();
@@ -549,8 +538,6 @@
 // let res = curr.toLocaleString("en-PK",options)
 // console.log(res)
 
-
-
 // class 15 Template Literal in JavaScript
 
 // let num1 = 9
@@ -560,14 +547,10 @@
 // console.log("The addition of " + num1 + " and " + num2 + " is " + res)
 // console.log(`The addition of ${num1} and ${num2} is ${res}`)
 
-
 // break line in template literal
 // console.log("My Name is \nAreeb") //\n
 // console.log(`My Name is
 // Areeb`)
-
-
-
 
 // #16 While loop in JavaScript
 
@@ -582,18 +565,14 @@
 // console.log("Hi")
 // console.log("Hi")
 
-
-
 // loop steps
 // 1.Initialization
 // 2.Condition
 // 3.Increment and Decrement
 
-
 // // while loop
 // check for the conditions
 // Execute the block
-
 
 // let i = 1 //Initialization value
 // while (i <= 5) //Condition
@@ -603,7 +582,6 @@
 //     i++ //post increment
 // }
 
-
 // let i = 5//Initialization value
 // while (i > 0) //Condition
 // {
@@ -611,9 +589,6 @@
 //     console.log(`Hi ${i}`)
 //     i-- //decrement
 // }
-
-
-
 
 // do while loop
 // Execute the block
@@ -626,13 +601,11 @@
 //     i++ //decrement
 // } while (i <= 5) //Condition
 
-
 // 17 For Loop in JavaScript
 
 // for (let i = 5; i >= 1; i--) {
 //     console.log(`${i} Hi`) //5 - 1
 // }
-
 
 // for (let i = 1; i <= 5; i++) {
 //     console.log(`${i} Hi`) //1 - 5
@@ -644,8 +617,6 @@
 //     i++
 // }
 
-
-
 // remove condition in for loop perametr and infinate loop
 // let i = 1
 // for (;; )  {
@@ -653,15 +624,12 @@
 //     i++
 // }
 
-
-
 // nested loop
 // for (let i = 1; i <= 5; i++) {
 //     console.log(`${i} Hi`)
 //     for (let j = 1; j <= 5; j++)
 //         console.log(j, 'Hello')
 // }
-
 
 // #18 While vs For Loop | Which to use and When?
 // which loop is best for loop or while loop
@@ -686,25 +654,148 @@
 //     console.log(i)
 // }
 
-
 // // agr ma num % 5 karunga tou result 1 ayga
-// let num = 123456 
+// let num = 123456
 // console.log(num % 5) //1
 
-
-
-
-// let num = 123456 
+// let num = 123456
 // console.log(num % 10) //6
 // num = parseInt(num / 10)
 // console.log(num)
 
+// let num = 564344
+// while (num > 0) {
+//     console.log(num % 10)
+//     num = parseInt(num / 10)
+//     // console.log(num)
+// }
 
+// #19 Objects in JavaScript
 
-let num = 564344
-while (num > 0) {
+//Datatype
+// there are two types of datatype
+// 1. Primitive
+// 2. Object
 
-    console.log(num % 10)
-    num = parseInt(num / 10)
-    // console.log(num)
-}
+// Primitive:
+// number,string,boolean,null,undefined,symbol
+
+//Object
+
+// this is an object
+// let alien = {};
+// console.log(alien, typeof alien); //{} object
+
+// let alien = {
+//   name: "Areeb",
+//   tech: "JS",
+// };
+// console.log(alien); //{ name: 'Areeb', tech: 'JS' }
+
+// let input = "name";
+// let alien = {
+//   name: "Areeb",
+//   tech: "JS",
+//   "work exp": 4,
+// };
+// console.log(alien.name); //Areeb
+// console.log(alien["tech"]); //JS
+// console.log(alien["work exp"]); //4
+// console.log(alien[input]); //Areeb
+
+// #20 Complex Object, Delete Property in JavaScript
+
+// let alien = {
+//   name: "Areeb",
+//   tech: "JS",
+//   laptop: {
+//     cpu: "i7",
+//     ram: 4,
+//     brand: "Asus",
+//   },
+// };
+// console.log(alien); //{name: 'Areeb',tech: 'JS',laptop: { cpu: 'i7', ram: 4, brand: 'Asus' }}
+// console.log(alien.laptop.brand); //Asus
+// console.log(alien.laptop.brand.length); //Asus length is 4
+// console.log(alien.laptop1?.brand.length); //undefined Question ? mark power error control
+
+// delete property in object
+// let alien = {
+//   name: "Areeb",
+//   tech: "JS",
+//   laptop: {
+//     cpu: "i7",
+//     ram: 4,
+//     brand: "Asus",
+//   },
+// };
+// delete alien.laptop;
+// console.log(alien, alien.laptop); //{ name: 'Areeb', tech: 'JS' } , undefined
+
+// class 21 For in loop in JavaScript
+
+// let alien = {
+//   name: "Areeb",
+//   tech: "JS",
+//   laptop: {
+//     cpu: "i7",
+//     ram: 4,
+//     brand: "Asus",
+//   },
+// };
+// // this is my practice
+// // let data = Object.entries(alien);
+// // console.log(alien.hasOwnProperty('name'));
+// for (let key in alien.laptop) {
+//     console.log(key, ":", alien.laptop[key]);
+// }
+
+// #22 Functions in JavaScript
+
+// function greet() {
+//   console.log('Hello world');
+// }
+//   greet();
+//   console.log('1');
+//   greet();
+//   greet();
+
+// #23 Function return and passing
+
+// function greet() {
+//   return "Hello world";
+// }
+// let str = greet();
+// console.log(str); //Hello world
+
+// function greet(str) {
+//   return `Hello ${str}!!`;
+// }
+// let arr = ["Areeb", "Ali", "Muneeb", "Shan"];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(greet(arr[i]));
+// }
+
+// class 24 Function Expression in JavaScript
+
+// Expreesion--->Evaluate--->Assigned
+
+// Function Expression
+// Anonymous function:  It is a function that does not have any name associated with it. Normally we use the
+//  function keyword before the function name to define a function in JavaScript, however, in anonymous functions
+// in JavaScript, we use only the function keyword without the function name.
+
+// This function is Function Expression
+let add = function (num1, num2) {
+  return num1 + num2;
+};
+let sum = add;
+console.log(add(5, 10)); //15
+console.log(sum(5, 6)); //11
+
+// // Anonymous function
+// (function (str) {
+//   return str;
+// });
+// let data = ("Hello");
+// console.log(data)
