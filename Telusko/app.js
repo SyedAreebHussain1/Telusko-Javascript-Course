@@ -786,12 +786,12 @@
 // in JavaScript, we use only the function keyword without the function name.
 
 // This function is Function Expression
-let add = function (num1, num2) {
-  return num1 + num2;
-};
-let sum = add;
-console.log(add(5, 10)); //15
-console.log(sum(5, 6)); //11
+// let add = function (num1, num2) {
+//   return num1 + num2;
+// };
+// let sum = add;
+// console.log(add(5, 10)); //15
+// console.log(sum(5, 6)); //11
 
 // // Anonymous function
 // (function (str) {
@@ -799,3 +799,97 @@ console.log(sum(5, 6)); //11
 // });
 // let data = ("Hello");
 // console.log(data)
+
+// 25 Local-Global Variable | Default Value in JavaScript
+
+// function greet(val) {
+//   console.log(user); //Areeb
+//   return `Hello ${val}!`;
+// }
+// let user = "Areeb"; //Global Variable
+// let str = greet(user);
+// console.log(str);
+
+// let user = "Areeb"; //Global Variable
+// function greet(val) {
+//   let num = 5;
+//   console.log(num); //5
+//   return `Hello ${val}!`;
+// }
+// console.log(num); //Error => num is not defined
+// let str = greet(user);
+// console.log(str);
+
+// function add(num1, num2, num3) {
+//   console.log(num1, num2, num3); //5 6 undefined
+//   return num1 + num2 + num3;
+// }
+
+// let res = add(5, 6);
+// console.log(res); //NaN
+
+// function add(num1, num2, num3 = 3) {
+// //   console.log(num1, num2, num3); //5 6 3
+//   return num1 + num2 + num3;
+// }
+
+// let res = add(5, 6,4);
+// console.log(res); //14
+
+// function add(num1, num2, num3 = 3) {
+//   console.log(num1, num2, num3); //5 6 5
+//   return num1 + num2 + num3;
+// }
+
+// let res = add(5, 6, 5);
+// console.log(res); //16
+
+// class 26 Arrow function in JavaScript
+// function means behaviour
+
+// function expression
+// let greet = function (user) {
+//   console.log("Hello " + user);
+//   return 1;
+// };
+// console.log(greet("Areeb"));
+
+// arrow function
+// let greet = (user) => {
+//   console.log("Hello " + user);
+//   return 1;
+// };
+// console.log(greet("Areeb"));
+
+// let sum = (num1, num2) => num1 + num2;
+// let res = sum;
+// console.log(res(5, 6));
+
+// task
+// let sum = (num1, num2) => {
+//   if (num1 > 0 && num2 > 0) {
+//     return num1 + num1;
+//   } else {
+//     return "Negiative number not accepted";
+//   }
+// };
+// console.log(sum(5, -6));
+
+// code Math.abs() convert negitive number to positive number in javascript
+//  const data =  Math.abs(-9);
+//  console.log(data) //9
+
+// 27 What are Methods in JavaScript
+
+// let laptop = {
+//     greet: (user) => {
+//       console.log(`Hello ${user} ${laptop.cpu}`);
+//     },
+//   cpu: "i9",
+//   ram: 16,
+//   brand: "HP",
+// };
+// laptop.greet("Areeb");
+
+
+// class 28 What is this? | JavaScript
