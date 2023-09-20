@@ -891,5 +891,217 @@
 // };
 // laptop.greet("Areeb");
 
-
 // class 28 What is this? | JavaScript
+
+// let laptop = {
+//   cpu: "i9",
+//   ram: 16,
+//   brand: "HP",
+//   getConfig: function () {
+//     console.log(cpu); //cpu is not defined
+//   },
+// };
+// laptop.getConfig();
+
+// let laptop = {
+//   cpu: "i9",
+//   ram: 16,
+//   brand: "HP",
+//   getConfig: function () {
+//     console.log(this.cpu); //i9
+//     console.log(laptop.cpu); //i9
+//   },
+// };
+// laptop.getConfig();
+
+// 29 Why it is called THIS?
+
+// function getFastLaptop(laptop1, laptop2) {
+//   if (laptop1.cpu > laptop2.cpu) {
+//     console.log(laptop1);
+//   } else {
+//     console.log(laptop2);
+//   }
+// }
+// let laptop1 = {
+//   cpu: "i6",
+//   ram: 16,
+//   brand: "HP",
+//   getConfig: function () {
+//     console.log(this.cpu); //
+//   },
+// };
+// let laptop2 = {
+//   cpu: "i7",
+//   ram: 16,
+//   brand: "Apple",
+//   getConfig: function () {
+//     console.log(this.cpu); //
+//   },
+// };
+// getFastLaptop(laptop1, laptop2);
+
+// let laptop1 = {
+//   cpu: "i7",
+//   ram: 16,
+//   brand: "HP",
+//   compare: function (other) {
+//     if (this.cpu > other.cpu) {
+//       console.log(this);
+//     } else {
+//       console.log(other);
+//     }
+//   },
+//   getConfig: function () {},
+// };
+// let laptop2 = {
+//   cpu: "i9",
+//   ram: 16,
+//   brand: "Apple",
+//   getConfig: function () {},
+// };
+
+// laptop1.compare(laptop2);
+
+// class 30 Constructor function in JavaScript
+
+// Constructor function
+// function Alien(name, tech) {
+//   this.name = name;
+//   this.tech = tech;
+
+//   this.work = function () {
+//     console.log("Solving bugs from 12 hrs");
+//   };
+//   return this;
+// }
+// let alien1 = new Alien("Areeb", "JS");
+// let alien2 = new Alien("Ali", "Java");
+
+// alien1.tech = "Blockchain";
+
+// console.log(alien1);
+// console.log(alien2);
+// alien1.work()
+
+// 31 Creating Array and Fetching Elements in JavaScript
+
+// let values = [];
+// values.push(5, 7);
+// values.push(9);
+// console.log(values);
+
+// let values = [5, 7, 8];
+// console.log(values[1]); //7
+// console.log(values[5]); //undefined
+
+// Different types of data in Array
+
+// let names = ["Areeb", "Kamran", "Ali"];
+// names[3] = "Avin";
+// console.log(names); //[ 'Areeb', 'Kamran', 'Ali', 'Avin' ]
+
+// let data = [
+//   "Areeb",
+//   5,
+//   { tect: "JS" },
+//   function compare() {
+//     console.log("Hello World compare");
+//   },
+//   function compare2() {
+//     console.log("Hello World compare2");
+//   },
+// ];
+
+// for (let i = 0; i < data.length; i++) {
+//     console.log('name',data[i].name);
+//   if (typeof data[i] === "function" && data[i].name === "compare") {
+//     data[i]();
+//   }
+// }
+
+// 32 Array methods in JavaScripts
+
+// let data = [5, 7, 8, 9];
+
+// data.push(3, 2); //always add end value in array
+// data.pop(); //always remove end value in array
+// data.shift(); //always remove start value in array
+// data.unshift(23); //always add start value in array
+
+// console.log(data);
+
+// let data = [5, 7, 8, 9, 2.2];
+// // splice first perameter index valu and second perameter No.of values you to remove and third is add value
+// data.splice(2, 1, "Areeb",23);
+// console.log(data); //[ 5, 7, 'Areeb', 23, 9, 2.2 ]
+
+// For of Loop with an Array in JavaScript
+
+// let nums = [];
+// nums[0] = 5;
+// nums[99] = 9;
+// console.log(nums.length); //100
+
+// let nums = [];
+// nums[0] = 5;
+// nums[99] = 9;
+
+// for (let n of nums) {
+//   console.log(nums[n]);
+// }
+
+// for (let key in nums) {
+//   console.log(`${key}:`, nums[key]);
+// }
+
+//33 Array Destructuring in JavaScript
+
+// let [a, b, c, d] = [2, 34, 53, 6];
+// console.log(c); //53
+
+// let a = 5;
+// let b = 6;
+// [a, b] = [b, a];
+// console.log(a,b)
+
+// let words = "My name is Areeb Hussain".split(" ");
+// let [a, b, c, d, e] = words;
+// console.log(a, b, c, d,);
+
+// let words = "My name is Areeb Hussain Ali Javascript".split(" ");
+// let [a, b, , ...d] = words;
+// console.log(a, b, d); ///My name [ 'Areeb', 'Hussain', 'Ali', 'Javascript' ]
+
+//34 Array forEach Method in JavaScript
+
+// let nums = [43, 51];
+// nums.forEach((ele, i, nums) => {
+//   console.log(i, ele * 2, nums); //0 86 [ 43, 51 ]  //1 102 [ 43, 51 ]
+// });
+
+// 34 Array Method filter map reduce
+
+// let nums = [42, 51, 24, 98, 65, 12];
+// let data = nums.filter((val) => val % 2 == 0);
+// console.log(data);
+
+// let nums = [42, 51, 24, 98, 65, 12];
+// nums
+//   .filter((val) => val % 2 == 0)
+//   .map((ele) => ele * 2)
+//   .forEach((val) => {
+//     console.log(val);
+//   });
+
+// reduce
+let nums = [42, 51, 24, 98, 65, 12];
+nums
+  .filter((val) => val % 2 == 0)
+  .map((ele) => {
+    console.log('ele',ele)
+  return  ele * 2
+})
+  .reduce((tot,n) => {
+    console.log(tot,n)
+  })
