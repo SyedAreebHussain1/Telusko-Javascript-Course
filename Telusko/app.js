@@ -1095,13 +1095,108 @@
 //   });
 
 // reduce
-let nums = [42, 51, 24, 98, 65, 12];
-nums
-  .filter((val) => val % 2 == 0)
-  .map((ele) => {
-    console.log('ele',ele)
-  return  ele * 2
-})
-  .reduce((tot,n) => {
-    console.log(tot,n)
-  })
+// let arr = [2, 5, 4, 8];
+// let data = arr.reduce((h1, h2) => {
+//   return h1 + h2;
+// });
+// console.log(data)//19
+
+// let nums = [42, 51, 24, 98, 65, 12];
+// let data = nums
+//   .filter((val) => val % 2 === 0)
+//   .map((ele) => {
+//     return ele * 2;
+//   })
+//   .reduce((tot, n) => {
+//     return tot + n;
+//   });
+// console.log(data);
+
+// 35 Set in JavaScript
+
+// let set1 = new Set("boookkeppr");
+// console.log(set1);//{ 'b', 'o', 'k', 'e', 'p', 'r' }
+
+// let nums = new Set();
+// nums.add(3);
+// nums.add("Areeb");
+// nums.add(5);
+// nums.add(5);
+// nums.add(2);
+// console.log(nums); //{ 3, 4, 5, 2 }
+
+// nums.forEach((val, i, num) => {
+//   console.log(val, i, num);
+// });
+
+// let nums = new Set();
+// nums.add(3);
+// nums.add("Areeb");
+// nums.add(5);
+// nums.add(5);
+// nums.add(2);
+// console.log(nums.has(2)); //true
+// console.log(nums.has(10)); //false
+
+// 36 Map in Javascript
+
+// let map = new Map();
+// map.set("Areeb", "JS");
+// map.set("Ali", "Android");
+// map.set("Shan", "Python");
+// console.log(map.keys()); //{ 'Areeb', 'Ali', 'Shan' }
+// console.log(map.has('Shan')); //true
+// console.log(map.get('Shan')); //Python
+
+// let map = new Map();
+// map.set("Areeb", "JS");
+// map.set("Ali", "Android");
+// map.set("Shan", "Python");
+// map.set("Ali", "Blockchain");
+
+// for (let [k, v] of map) {
+//   console.log(k, v);
+// }
+
+// let map = new Map();
+// map.set("Areeb", "JS");
+// map.set("Ali", "Android");
+// map.set("Shan", "Python");
+// map.set("Ali", "Blockchain");
+
+// console.log(map);
+// map.forEach((v, k) => {
+//   console.log(k, ":", v);
+// });
+
+// 37 What is Recursion? | JavaScript
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// function show(val) {
+//   console.log(val);
+//   if (val > 0) {
+//     show();
+//   }
+// }
+// for (let i = 0; i < arr.length; i++) {
+//   show(arr[i]);
+// }
+
+// // let num = 1;
+// function show() {
+//   console.log("hi", num);
+//   num++;
+//   if (num <= 11155) show();
+// }
+// show()
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+function show(val) {
+  console.log("hi", val);
+  if (val > 0){
+    show()
+  };
+}
+for (let i = 0; i < arr.length; i++) {
+  show(arr[i]);
+}
